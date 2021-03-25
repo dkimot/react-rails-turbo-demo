@@ -1,5 +1,6 @@
 class MessagesController < ApplicationController
   before_action :set_room, only: %i[ new create ]
+  skip_before_action :verify_authenticity_token
 
   def new
     @message = @room.messages.new
