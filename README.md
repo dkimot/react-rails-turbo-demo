@@ -18,4 +18,4 @@ The MutationObserver in `app/javascript/react_rails/observer.js` is based heavil
 in both Stimulus and Turbo.
 
 `app/javascript/react_rails/index.js` is just ReactRailsUJS ported so that it doesn't eagerly mount components. The 
-observer calls mounting and unmounting functions on my `ReactRails` object. 
+observer calls mounting and unmounting functions on my `ReactRails` object.
