@@ -9,6 +9,8 @@ import "channels"
 
 ActiveStorage.start()
 // Support component names relative to this directory:
-var componentRequireContext = require.context("components", true);
-var ReactRailsUJS = require("react_ujs");
-ReactRailsUJS.useContext(componentRequireContext);
+import ReactRails from '../react_rails';
+const componentRequireContext = require.context("components", true);
+ReactRails.useContext(componentRequireContext);
+
+ReactRails.observer.start();
